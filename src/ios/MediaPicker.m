@@ -18,6 +18,7 @@
     mediaPicker.allowsPickingMultipleItems = [msong isEqualToString:@"true"];
     mediaPicker.showsCloudItems = [iCloudItems isEqualToString:@"true"];
     mediaPicker.prompt = NSLocalizedString (pickerTitle, "Prompt in media item picker");
+    mediaPicker.showsItemsWithProtectedAssets = NO;
 
     [self.viewController presentViewController:mediaPicker animated:YES completion:nil];
 
